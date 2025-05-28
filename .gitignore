@@ -7,18 +7,62 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Node.js dependencies (Vite frontend)
+node_modules/
+dist/
+dist-ssr/
 *.local
+
+# Python (FastAPI backend)
+venv/
+env/
+.venv/
+ENV/
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+*.sqlite3
+*.db
+
+# dotenv and environment files
+.env
+*.env
+
+# macOS
+.DS_Store
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Jupyter/IPython
+.ipynb_checkpoints/
+
+# OS files
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Coverage reports
+coverage/
+*.cover
+*.coverage
+*.cache
+
+# Optional Python packaging
+build/
+dist/
+*.egg-info/
+
+# Python virtual environment metadata
+Pipfile.lock
+poetry.lock
